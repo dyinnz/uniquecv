@@ -8,8 +8,8 @@
 + 依赖包：ctex, titlesec, color, setspace, fontawesome
 
 #### Fedora 25:
-使用`dnf install texlive`安装texlive
-使用`dnf install texlive-ctex`安装依赖包，其他包类似
++ 使用`dnf install texlive`安装texlive
++ 使用`dnf install texlive-ctex`安装依赖包，其他包类似
 
 ### 参考
 
@@ -24,7 +24,7 @@
 + fontawesome: 设置常用icon，如电话、邮箱、Github等
 
 ### 定制建议
-+ \tiny \small \normalsize \large \Large \LARGE \huge \Huge \HUGE 改变字体大小
++ \tiny \small \normalsize \large \Large \LARGE \huge \Huge 改变字体大小
 + \makebox 对齐中间的文字
 + \begin{spacing}{1.0} 改变行间距
 + \smallskip \medskip \bigskip 插入垂直空白
