@@ -29,6 +29,8 @@
 + \begin{spacing}{1.0} 改变行间距
 + \smallskip \medskip \bigskip 插入垂直空白
 + ~ \quad \qquad 插入水平空白
-+ \hspace{1.0em} \vspace{1.0ex} 插入水平/垂直空格
++ \hspace{1.0em} \vspace{1.0ex} 插入水平/垂直空白
 + \textbf 加粗 \textit 斜体/楷体
 
+### 实例
+见 example.pdf
