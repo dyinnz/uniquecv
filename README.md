@@ -32,5 +32,5 @@
 + \hspace{1.0em} \vspace{1.0ex} 插入水平/垂直空白
 + \textbf 加粗 \textit 斜体/楷体
 
-### 实例
-见 example.pdf
+### 示例
+![image](https://github.com/dyinnz/uniquecv/blob/master/example.jpg)
