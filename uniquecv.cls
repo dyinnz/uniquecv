@@ -13,6 +13,16 @@
 % define some colors
 \RequirePackage{color}
 
+% customize sep of items
+\RequirePackage{enumitem}
+
+\setitemize[1]{
+  itemsep=0.3ex, % space between item
+  partopsep=0.0ex, %
+  parsep=\parskip,
+  topsep=0.3ex % space before text
+} 
+
 % set margin
 \RequirePackage[
 	a4paper,
@@ -29,13 +39,13 @@
 % ----------------------------------------------------------------------------- %
 
 % name of candidate
-\newcommand{\name}[1]{%
+\newcommand{\name}[1]{
   \centerline{\Huge{#1}}    % in the center & Huge font size
 }
 
 % basic information under the name
-\newcommand{\basicinfo}[1]{%
-  \centerline{\sffamily\large{#1}}%
+\newcommand{\basicinfo}[1]{
+  \centerline{\sffamily\large{#1}}
 }
 
 % define color gray for date
@@ -47,39 +57,41 @@
 % ----------------------------------------------------------------------------- %
 
 \titleformat{\section}
-  % customize the section
-  {\color{cvblue}\Large\bf\raggedright} 
-  % can be used to give a prefix to all sections
-  {}{0em} 
-  % can be used to insert code before the heading
+  % format: to be applied to the whole title -- label and text
+  {\color{cvblue}\Large\bf\raggedright}
+  % label: prefix the title body
   {}
+  % sep: space between label and title body
+  {0em}
+  % before: code preceding the title body
+  {}
+  % after: code following the title body
   % insert a horizontal line after the heading
   [\titlerule]
 
 % adjust the vertical space before and after the heading
-\titlespacing*{\section}{0cm}{*1.8}{*1.8}
+\titlespacing*{\section}{0cm}{*1.6}{*1.2}
 
+% similar above
 \titleformat{\subsection}
   {\normalsize\raggedright}
-  {}{0em}
-  {}
-\titlespacing*{\subsection}{0cm}{*1.0}{*0.1}
+  {}{0em}{}
+\titlespacing*{\subsection}{0cm}{*1.6}{0.0ex}
 
 % ----------------------------------------------------------------------------- %
 
-\newcommand{\dateditem}[2]{%
+\newcommand{\dateditem}[2]{
   % set the date text gray
-  \subsection[#1]{#1 \hfill \textcolor{gray}{#2}}%
+  \subsection[#1]{#1 \hfill \textcolor{gray}{#2}}
 }
 
-\newcommand{\datedaward}[3]{%
+\newcommand{\datedaward}[3]{
   % use the box to align text#2,
   % set text#1, text#2 bf
   \subsection[#1]{\makebox[13em][l]{\textbf{#1}} ~ \textbf{#2} \hfill \textcolor{gray}{#3}}%
 }
 
-
 % same as \datedaward
-\newcommand{\datedproject}[3]{%
+\newcommand{\datedproject}[3]{
   \subsection[#1]{\makebox[13em][l]{\textbf{#1}} ~ \textbf{#2} \hfill \textcolor{gray}{#3}}%
 }

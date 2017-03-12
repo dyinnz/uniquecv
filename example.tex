@@ -1,6 +1,5 @@
 \documentclass{uniquecv}
 
-\usepackage{setspace}
 \usepackage{fontawesome}
 
 % ----------------------------------------------------------------------------- %
@@ -23,25 +22,24 @@
 % ----------------------------------------------------------------------------- %
 
 \section{教育背景}
-\dateditem{\textbf{华中科技大学} \hspace{0.5ex} 软件工程 \hspace{0.5ex} 本科}{2014年 -- 2018年}
-成绩：年级前?\% \hspace{0.8ex} 英语：CET6
+\dateditem{\textbf{华中科技大学} \quad 软件工程 \quad 本科}{2014年 -- 2018年}
+成绩：年级前100\% \quad 英语：CET6
 
 
 % ----------------------------------------------------------------------------- %
 
 \section{专业技能}
-C/C++、Lisp、Haskell、Java、算法与数据结构、Linux、Storm、Hadoop、Spark
+\smallskip
+C/C++、Lisp、Java、算法与数据结构、Linux、Storm、Hadoop、Spark、Flink、Hive、Hbase
 
 
 % ----------------------------------------------------------------------------- %
 
 \section{获奖情况}
-\datedaward{一等奖}{世界应用大赛} {2026年06月}
-\datedaward{\normalsize{这是一个比较长长长长的奖}}{比较长的奖的比赛}{2016年04月}
-\datedaward{冠军}{环武汉山地车比赛} {2015年09月}
-
+\datedaward{一等奖}{XYZ应用开发大赛} {2026年06月}
+\datedaward{\small{这是一个比较长长长长的奖}}{比较长的奖的比赛}{2016年04月}
+\datedaward{冠军}{武汉KK编程挑战赛} {2015年09月}
 \medskip
-
 
 % ----------------------------------------------------------------------------- %
 
@@ -49,35 +47,39 @@ C/C++、Lisp、Haskell、Java、算法与数据结构、Linux、Storm、Hadoop�
 
 
 % ---
-\datedproject{这是一个测试项目}{竞赛项目}{2016年05月 -- 2016年06月}
-\textit{分布式宽度优先搜索、并行计算}
-\vspace{1.5ex}
+\datedproject{分布式流体计算项目}{竞赛项目}{2016年05月 -- 2016年06月}
+\textit{性能优化、并行计算}
+\vspace{0.4ex}
 
-\begin{spacing}{0.1}
-
-实现了CPU/GPU平台的分布式XXX程序
+将一个单机的流体计算程序移植到多机平台
 \begin{itemize}
-  \item 将计算任务随机分配给所有计算节点
-  \item 使用XXX加速计算
+  \item 计算节点内部使用OpenMP并行化
+  \item 计算节点间使用MPI并行化
+  \item 单机优化性能达2x, 多机接近线性加速比
 \end{itemize}
-
-\end{spacing}
-
 
 % ---
-\datedproject{这也是一个测试项目}{个人项目}{2016年02月 -- 2016年04月}
+\datedproject{这是一个测试项目}{导师项目}{2016年02月 -- 2016年04月}
 \textit{编译技术、C++}
-\vspace{1.5ex}
+\vspace{0.4ex}
 
-\begin{spacing}{0.1}
+这是一个没有分点陈述的项目，如果没有分点陈述，LaTeX的排版会是什么样子？
+这是一个没有分点陈述的项目，如果没有分点陈述，LaTeX的排版会是什么样子？
+这是一个没有分点陈述的项目，如果没有分点陈述，LaTeX的排版会是什么样子？
+这是一个没有分点陈述的项目，如果没有分点陈述，LaTeX的排版会是什么样子？
 
-使用C++实现了一个简单的C++编译器
+% ---
+\datedproject{C-Compiler}{个人项目}{2016年02月 -- 2016年04月}
+\textit{编译技术、C++}
+\vspace{0.4ex}
+
+使用C++实现了一个简单C语言编译器，支持生成到目标代码。
 \begin{itemize}
-  \item 支持自举
-  \item 支持C++11标准
+  \item 支持C11标准大部分标准
+  \item 实现了类似lex/flex的词法解析器生成工具
+  \item 实现了类似yacc/bison的语法解析器生成工具
+  \item 后端部分采用窥孔优化
 \end{itemize}
-
-\end{spacing}
 
 
 % ----------------------------------------------------------------------------- %
