@@ -5,11 +5,12 @@
 ### 依赖
 
 + 使用XeLatex编译
-+ 依赖包：ctex, titlesec, color, setspace, fontawesome
++ 依赖包：ctex, titlesec, xcolor, setspace, fontawesome, fandol, xecjk
 
-#### Fedora 25:
+#### Fedora 31:
 + 使用`dnf install texlive`安装texlive
-+ 使用`dnf install texlive-ctex`安装依赖包，其他包类似
++ 使用以下 `dnf install texlive-ctex` `dnf install texlive-titlesec` `dnf install texlive-xcolor` `dnf install texlive-setspace` `dnf install texlive-fontawesome` `dnf install texlive-xecjk` `dnf install texlive-fandol`安装依赖包
++ 使用以下`xelatex example.tex`渲染
 
 ### 参考
 
