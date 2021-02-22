@@ -36,6 +36,9 @@
 % do not need indent in resume
 \setlength\parindent{0pt}
 
+% disable the page number
+\pagenumbering{gobble}
+
 % ----------------------------------------------------------------------------- %
 
 % name of candidate
